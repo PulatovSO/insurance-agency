@@ -28,19 +28,26 @@
       <header class="hero__header header p-4">
         <div class="container">
           <div class="row align-items-center">
-            <h2 class="header__logo col-3">BrandName</h2>
+            <h2 class="header__logo col-md-3">BrandName</h2>
             <nav class="header__nav nav row col-9 align-items-center justify-content-between">
-              <ul class="nav__list row col-5">
+              <ul class="nav__list row col-md-5">
                 <li class="nav__item col"><a href="#">Home</a></li>
                 <li class="nav__item col"><a href="#">Product</a></li>
                 <li class="nav__item col"><a href="#">Pricing</a></li>
                 <li class="nav__item col"><a href="#">Contact</a></li>
               </ul>
-              <ul class="nav__links row col-4 justify-content-center">
+              <ul class="nav__links row col-md-6 col-lg-4 justify-content-center">
                 <li class="nav__link col"><a href="#">Login</a></li>
                 <li class="nav__link col-9"><a class="nav__button" href="#">Become a member</a></li>
               </ul>
             </nav>
+          </div>
+          <div class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item"><button><i class='bx bx-search'></i></button></li>
+              <li class="menu__item"><button><i class='bx bx-cart-alt' ></i></button></li>
+              <li class="menu__item"><button class="hamburger"><i class='bx bx-menu-alt-right'></i></button></li>
+            </ul>
           </div>
         </div>
       </header>
@@ -69,7 +76,7 @@
   <section class="blocks">
     <div class="container">
       <div class="row">
-        <div class="blocks__block block col text-center">
+        <div class="blocks__block block col-sm-12 col-md-4 text-center">
           <img src="img/block1.svg" alt="block-image">
           <h3 class="block__title mt-4">Peace of Mind</h3>
           <p class="block__p">
@@ -77,7 +84,7 @@
             Now we have given up. 
           </p>
         </div>
-        <div class="blocks__block block col text-center">
+        <div class="blocks__block block col-sm-12 col-md-4 text-center">
           <img src="img/block2.svg" alt="block-image">
           <h3 class="block__title mt-4">Set For Life</h3>
           <p class="block__p">
@@ -85,7 +92,7 @@
             machines that launched 
           </p>
         </div>
-        <div class="blocks__block block col text-center">
+        <div class="blocks__block block col-sm-12 col-md-4 text-center">
           <img src="img/block3.svg" alt="block-image">
           <h3 class="block__title mt-4">100% Satisfaction</h3>
           <p class="block__p">
@@ -101,7 +108,7 @@
   <!-- industry ====================== -->
   <section class="industry">
     <div class="container">
-      <h2 class="industry__title text-center">Industry</h2>
+      <h2 class="industry__title text-center">What Clients Say</h2>
       <p class="industry__p text-center">
         Problems trying to resolve the conflict between <br>
         the two major realms of Classical physics: Newtonian mechanics 
@@ -130,7 +137,7 @@
                   of time first and then space.
                 </p>
               </div>
-              <div class="industry__card icard ms-5 col">
+              <div class="industry__card icard icard-hidden ms-5 col">
                 <h3 class="icard__title">Regina Miles</h3>
                 <span class="icard__span">Designer</span>
                 <div class="icard__stars mt-3 mb-2">
@@ -164,7 +171,7 @@
                   of time first and then space.
                 </p>
               </div>
-              <div class="industry__card icard ms-5 col">
+              <div class="industry__card icard icard-hidden ms-5 col">
                 <h3 class="icard__title">Regina Miles</h3>
                 <span class="icard__span">Designer</span>
                 <div class="icard__stars mt-3 mb-2">
@@ -198,7 +205,7 @@
                   of time first and then space.
                 </p>
               </div>
-              <div class="industry__card icard ms-5 col">
+              <div class="industry__card icard icard-hidden ms-5 col">
                 <h3 class="icard__title">Regina Miles</h3>
                 <span class="icard__span">Designer</span>
                 <div class="icard__stars mt-3 mb-2">
@@ -238,8 +245,8 @@
         the two major realms of Classical physics: Newtonian mechanics 
       </p>
       <div class="cards__wrap">
-        <div class="row">
-          <div class="cards__item item col m-2">
+        <div class="icards__wrap row">
+          <div class="cards__item item col-xs-10 col-sm-5 col-md-3">
             <div class="item__filter">
               <div class="item__inner">
                 <span class="item__header">Tax Management</span>
@@ -251,7 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="cards__item item col m-2">
+          <div class="cards__item item col-xs-10 col-sm-5 col-md-3">
             <div class="item__filter">
               <div class="item__inner">
                 <span class="item__header">Tax Management</span>
@@ -263,7 +270,7 @@
               </div>
             </div>
           </div>
-          <div class="cards__item item col m-2">
+          <div class="cards__item item col-xs-10 col-sm-5 col-md-3">
             <div class="item__filter">
               <div class="item__inner">
                 <span class="item__header">Tax Management</span>
@@ -275,7 +282,7 @@
               </div>
             </div>
           </div>
-          <div class="cards__item item col m-2">
+          <div class="cards__item item col-xs-10 col-sm-5 col-md-3">
             <div class="item__filter">
               <div class="item__inner">
                 <span class="item__header">Tax Management</span>
@@ -360,15 +367,136 @@
   </section>
   <!-- /pricing ====================== -->
 
+  <!-- forms ====================== -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="contact__header">Contact Us</h2>
+      <h3 class="contact__title">Make an Appointment</h3>
+      <div class="contact__wrap">
+        <form class="contact__form mt-4 col-lg-8 row" method="post" action="https://echo.htmlacademy.ru/">
+          <div class="col-md-6 input-group-lg">
+            <label for="user-name" class="form-label"></label>
+            <input type="text" class="form-control" name="name" id="user-name" placeholder="Full Name * " required>
+          </div>
+          <div class="col-md-6 input-group-lg">
+            <label for="user-email" class="form-label"></label>
+            <input type="email" class="form-control" name="email" id="user-email" placeholder="Email * " required>
+          </div>
+          <div class="col-md-6 input-group-lg">
+            <label for="user-value" class="form-label"></label>
+            <select class="form-select" id="user-value" required>
+              <option selected disabled value="1"><p class="select-option">Please Select...</p></option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-6 input-group-lg">
+            <label for="user-aviable" class="form-label"></label>
+            <select class="form-select" id="user-aviable" required>
+              <option selected disabled value="4">4:00 Available</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-12 mb-5">
+            <div class="form-textarea">
+              <label for="user-message" class="form-label"></label>
+              <textarea class="form-control" name="user-message" id="user-message" rows="6" placeholder="Message" required></textarea>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="contact__btn" type="submit">Book Appointment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- /forms ====================== -->
+
+  <!-- consulting ====================== -->
+  <section class="consult">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="consult__text col-sm-6 col-md-6 col-lg-6">
+          <h2 class="consult__title">Consulting Agency For Your Business</h2>
+          <p class="consult__p">the quick fox jumps over the lazy dog</p>
+        </div>
+        <div class="consult__btn-wrap col-sm-6 col-md-4 col-lg-3">
+          <a href="#" class="consult__btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /consulting ====================== -->
+
+  <!-- footer ====================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="row">
+          <ul class="footer__col footer-list col-xs-10 col-sm-4 col-md-6 col-lg-2">
+            <li class="footer-list__title">Company Info</li>
+            <li class="footer-list__item"><a href="#">About Us</a></li>
+            <li class="footer-list__item"><a href="#">Carrier</a></li>
+            <li class="footer-list__item"><a href="#">We are hiring</a></li>
+            <li class="footer-list__item"><a href="#">Blog</a></li>
+          </ul>
+          <ul class="footer__col footer-list col-xs-10 col-sm-4 col-md-6 col-lg-2">
+            <li class="footer-list__title">Legal</li>
+            <li class="footer-list__item"><a href="#">About Us</a></li>
+            <li class="footer-list__item"><a href="#">Carrier</a></li>
+            <li class="footer-list__item"><a href="#">We are hiring</a></li>
+            <li class="footer-list__item"><a href="#">Blog</a></li>
+          </ul>
+          <ul class="footer__col footer-list col-xs-10 col-sm-4 col-md-6 col-lg-2">
+            <li class="footer-list__title">Features</li>
+            <li class="footer-list__item"><a href="#">Business Marketing</a></li>
+            <li class="footer-list__item"><a href="#">User Analytic</a></li>
+            <li class="footer-list__item"><a href="#">Live Chat</a></li>
+            <li class="footer-list__item"><a href="#">Unlimited Support</a></li>
+          </ul>
+          <ul class="footer__col footer-list col-xs-10 col-sm-4 col-md-6 col-lg-2">
+            <li class="footer-list__title">Resources</li>
+            <li class="footer-list__item"><a href="#">IOS & Android</a></li>
+            <li class="footer-list__item"><a href="#">Watch a Demo</a></li>
+            <li class="footer-list__item"><a href="#">Customers</a></li>
+            <li class="footer-list__item"><a href="#">API</a></li>
+          </ul>
+          <ul class="footer__col footer-list col-xs-10 col-sm-4 col-md-6 col-lg-3">
+            <li class="footer-list__title">Get In Touch</li>
+            <li class="footer-list__item"><a href="#"><img class="me-2" src="img/icon1.svg" alt="icon">(480) 555-0103</a></li>
+            <li class="footer-list__item"><a href="#"><img class="me-2" src="img/icon2.svg" alt="icon">4517 Washington Ave.</a></li>
+            <li class="footer-list__item footer-out"><a href="#"><img class="me-2" src="img/icon3.svg" alt="icon">debra.holt@example.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom fbottom">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="fbottom__text-wrap col-md-8">
+            <p class="fbottom__text">Made With Love By Figmaland All Right Reserved </p>
+          </div>
+          <ul class="fbottom__links col-sm-12 col-md-2">
+            <li class="fbottom__link"><a href="https://facebook.com"><i class='bx bxl-facebook-circle'></i></a></li>
+            <li class="fbottom__link me-3 ms-3"><a href="https://instagram.com"><i class='bx bxl-instagram' ></i></a></li>
+            <li class="fbottom__link"><a href="https://twitter.com"><i class='bx bxl-twitter' ></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer ====================== -->
+
+
+
   <!-- scripts -->
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+  <!-- <br><br><br><br><br>
   <br><br><br><br><br>
   <br><br><br><br><br>
   <br><br><br><br><br>
   <br><br><br><br><br>
-  <br><br><br><br><br>
-  <br><br><br><br><br>
+  <br><br><br><br><br> -->
 </body>
 </html>

@@ -3,6 +3,9 @@
 .hero {
   min-height: 670px;
   background-image: url(../../../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   
   &__filter {
     height: 100%;

@@ -22,3 +22,13 @@
     color: $color-lignt;
   }
 }
+
+
+@media (max-width: 786px) {
+
+  .block:nth-child(2) {
+    margin: 105px 0;
+  }
+}
+
+

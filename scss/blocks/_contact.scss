@@ -1,0 +1,105 @@
+
+.contact {
+  padding: 90px 0;
+  background-image: url(../../img/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__header {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: $color-primary-blue;
+  }
+
+  &__title {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: $color-primary-blue;
+  }
+
+  &__btn {
+    @include button-square;
+    @include a-unstyled;
+    padding: 15px 40px;
+    color: $color-lignt;
+    border: none;
+  }
+
+  &__form {
+    padding-left: 0;
+  }
+
+  input,
+  textarea,
+  select {
+    background: #f9f9f9;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: #737373;
+    }
+  }
+
+  select {
+    font-size: 10px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+}
+
+
+
+// consulting =========================================
+
+.consult {
+  padding: 40px 0;
+  background: #fafafa;
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: $color-primary-blue;
+  }
+
+  &__p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+
+  &__btn {
+    @include button-square;
+    @include a-unstyled;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: $color-lignt;
+  }
+}
+
+
+@media (max-width: 586px) {
+ 
+  .consult {
+    .row {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}

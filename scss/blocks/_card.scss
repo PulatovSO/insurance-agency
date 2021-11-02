@@ -23,6 +23,7 @@
   }
 }
 
+
 .item {
   padding: 0;
   width: 331px;
@@ -55,7 +56,6 @@
   }
 
   &__title {
-    // margin-top: 15px;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -80,5 +80,13 @@
   &:nth-child(4) {
     background-image: url(../../img/card4.jpg);
   }
+}
 
+
+
+@media (max-width: 586px) {
+
+  .item {
+    margin-bottom: 30px;
+  }
 }
