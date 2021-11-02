@@ -1,0 +1,107 @@
+
+
+.pricing {
+  padding-top: 112px;
+  padding-bottom: 141px;
+  background: $color-primary-blue;
+
+  &__title {
+    @include title;
+    color: $color-lignt;
+  }
+
+  &__p {
+    @include paragraph;
+    color: $color-lignt;
+  }
+
+  &__cards {
+    margin-top: 106px;
+  }
+}
+
+.tarif {
+  padding: 50px 40px;
+  max-width: 327px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: $color-primary-blue;
+  }
+
+  &__desc {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #737373;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #23A6F0;
+  }
+
+  &__date {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #8EC2F2;
+  }
+
+  &__btn {
+    @include button-square;
+    @include a-unstyled;
+    padding: 15px 82px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: $color-lignt;
+  }
+
+  &__list {
+    @include list-unstyled;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: #252B42;
+  }
+
+  &__item {
+    position: relative;
+    transform: translateX(40px);
+
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: -5px;
+      left: -40px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-image: url(../../img/check.svg);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
+
+
+
+

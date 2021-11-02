@@ -1,0 +1,40 @@
+
+
+.hero {
+  min-height: 670px;
+  background-image: url(../../../img/hero-bg.jpg);
+  
+  &__filter {
+    height: 100%;
+    background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%);
+  }
+
+  &__title {
+    margin-top: 134px;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    color: $color-lignt
+  }
+
+  &__slogan {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: $color-lignt
+  }
+
+  .button-dark {
+    @include dark-button;
+    padding: 15px 36px;
+  }
+
+  .button-tr {
+    @include a-unstyled;
+    padding: 15px 36px;
+    border: 2px solid $color-lignt;
+    border-radius: 37px;
+    color: $color-lignt;
+  }
+}

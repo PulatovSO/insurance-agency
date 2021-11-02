@@ -1,0 +1,32 @@
+
+.header {
+  &__logo {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-lignt;
+  }
+
+  &__nav {
+    .nav__list {
+      @include list-unstyled;
+    }
+    
+    a{
+      @include a-unstyled;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: $color-lignt
+    }
+    
+    .nav__links {
+      @include list-unstyled;
+    }
+
+    .nav__button {
+      @include button-square
+      padding: 15px 25px;
+    }
+  }
+}

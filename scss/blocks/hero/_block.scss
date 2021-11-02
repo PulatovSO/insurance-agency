@@ -1,0 +1,24 @@
+
+.blocks {
+  padding: 135px 0;
+  background: $color-primary-blue;
+}
+
+.block {
+
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: $color-lignt;
+  }
+
+  &__p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $color-lignt;
+  }
+}
